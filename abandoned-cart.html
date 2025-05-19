@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abandoned Cart Email</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border: 1px solid #ddd;
+      }
+      .header {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .header h1 {
+        color: #333333;
+        margin-bottom: 10px;
+      }
+      .product {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+      }
+      .product img {
+        max-width: 100px;
+        margin-right: 20px;
+      }
+      .product-info h3 {
+        margin: 0 0 5px 0;
+      }
+      .cta-button {
+        display: block;
+        background-color: #007bff;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px;
+        margin: 20px 0;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .footer {
+        font-size: 14px;
+        color: #666666;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="header">
+        <h1>Hi {{first_name}},</h1>
+        <p>Oops! You left something behind</p>
+        <p>Don't miss out—your cart is waiting!</p>
+      </div>
+
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkpQA2tQGLM4G-1JaAo5t9YTkpQUBOxYn0w&s" alt="Product Image" />
+        <div class="product-info">
+          <h3>Nova Wireless Headphones</h3>
+          <p>$89.99</p>
+        </div>
+      </div>
+
+      <p style="font-size: 16px;">
+        As a thank you, here’s <strong>10% off</strong> if you complete your purchase within the next 24 hours.
+      </p>
+
+      <a href="#" class="cta-button">Return to Your Cart</a>
+
+      <p style="text-align: center; font-size: 14px;">
+        Need help? <a href="#">Contact our support team</a>.
+      </p>
+
+      <div class="footer">
+        © 2025 NovaTech | You’re receiving this because you started a checkout on our site.<br>
+        <a href="{{unsubscribe_link}}" style="color: #007bff;">Unsubscribe</a>
+      </div>
+    </div>
+  </body>
+</html>
